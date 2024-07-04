@@ -1,0 +1,57 @@
+@import url("./normalize.css");
+
+:root {
+  --background-color: #ecf0f1;
+  --background-light: #ffffff;
+  --background-secondary: #bdbdbd;
+  --white: #ffffff;
+  --text: #ffffff;
+  --danger: #e74c3c;
+  --success: #2ecc71;
+  --border-radius: 3px;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --background-secondary: #2a2a2a;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

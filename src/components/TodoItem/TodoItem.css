@@ -1,0 +1,51 @@
+.todo-item {
+  height: 50px;
+  padding: 0 15px 0 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+}
+
+.todo-item.success .todo-input {
+  color: var(--text);
+}
+
+.success-task {
+  background-color: var(--success);
+}
+
+.success-task .todo-input {
+  color: var(--white);
+}
+
+.todo-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  background-color: transparent;
+}
+
+.todo-btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.success-btn,
+.danger-btn {
+  padding: 5px;
+  color: var(--white);
+  border-radius: var(--border-radius);
+}
+
+.danger-btn {
+  background-color: var(--danger);
+}
+
+.success-btn {
+  background-color: var(--success);
+}
