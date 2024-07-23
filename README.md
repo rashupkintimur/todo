@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# todo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
 
-Currently, two official plugins are available:
+**todo** — это веб-приложение для управления задачами, созданное с использованием React и TypeScript. Приложение позволяет пользователям добавлять, удалять, изменять задачи, отмечать их выполнение и переключаться между светлой и тёмной темами.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функциональные возможности
 
-## Expanding the ESLint configuration
+- **Добавление задач:** Создавайте новые задачи, указывая их название.
+- **Удаление задач:** Удаляйте задачи, которые больше не актуальны.
+- **Изменение задач:** Редактируйте существующие задачи.
+- **Пометка выполнения:** Отмечайте задачи как выполненные или невыполненные.
+- **Переключение тем:** Выбирайте между светлой и тёмной темами для интерфейса приложения.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Структура проекта
 
-- Configure the top-level `parserOptions` property like this:
+- `index.html` - Основной HTML файл.
+- `public/` - Каталог со статическими файлами
+- `src/` - Исходный код приложения.
+  - `components/` - Компоненты React для различных частей приложения.
+  - `hooks/` - Пользовательские хуки.
+  - `pages/` - Компоненты с бизнес-логикой
+  - `App.tsx` - Главный компонент приложения.
+  - `main.tsx` - Входная точка приложения.
+- `package.json` - Файл зависимостей и скриптов.
+- `package-lock.json` - Файл с подробной информацией о зависимостях.
+- `tsconfig.json` - Конфигурация TypeScript.
+- `tsconfig.app.json` - Доп. конфигурация TypeScript.
+- `tsconfig.node.json` - Конфигурация TypeScript с работой с Node.js.
+- `eslintrc.cjs` - Конфигурация ESLint.
+- `.gitignore` - Файл с исключением отслеживания git каталогов и файлов.
+- `README.md` - Файл с описанием проекта.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Установка
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Клонируйте репозиторий:
+  ```bash
+  git clone https://github.com/rashupkintimur/todo.git
+
+2. Установка зависимостей.
+  ```bash
+  npm i
+
+3. Запуск проекта.
+  ```bash
+  npm run dev
+
+4. Откройте браузер и перейдите по ссылке: http://localhost:3000.
